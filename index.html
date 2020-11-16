@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                font-family: "Open Sans", helvetica, arial;
+             }
+        tr{
+            height: 100px;
+        }
+        
+        table th {
+                background: #333;
+                 color: #fff;
+                font-weight: bold;
+                font-size: 18px;
+                 }
+        table td, th {
+                padding: 6px 6px 6px 10px;
+                border: 1px solid #ccc;
+                text-align:center;
+                 }
+       
+        .css-serial {
+                 counter-reset: serial-number; 
+                 }
+        .css-serial td:first-child:before {
+                 counter-increment: serial-number; 
+                 content: counter(serial-number);
+                 }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Difference b/w HTML Tags and Attributes</h2>
+    <table style="width: 60%;" align="center" border="2px" class="css-serial">
+        <col style="width: 10%;">
+        <col style="width:45%">
+        <col style="width:45%">
+           <thead>
+            <tr>
+                <th >S.No</th>
+                <th >HTML Tag</th>
+                <th >HTML Attribute</th>
+            </tr>
+           </thead>
+           <tbody>
+           <tr>
+               <td>&nbsp;</td>
+               <td>HTML tags are used to hold the elements</td>
+               <td>HTML attributes are used to describe the characteristic of an HTML element in details</td>
+           </tr>
+           <tr>
+               <td>&nbsp;</td>
+               <td>HTML tags starts with "<" and ends with ">"</td>
+                <td>HTML attributes are found only in starting tag</td>
+           </tr>
+           <tr>
+                <td>&nbsp;</td>
+                <td>HTML tags are almost like keywords where every single tag has unique meaning</td>
+                <td>HTML attributes specify various additional properties to the existing HTML elements</td>
+           </tr>
+           </tbody>
+           <tr>
+            <th colspan ="4" style="text-align:center"> Name - Amit Kumar </br> Roll No - 1906091
+            </th>
+          </tr>
+    </table>
+</body>
+</html>
